@@ -43,4 +43,8 @@ FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo),
 foreign key (fkVaga) references vaga(idVaga)
 );
 
+ALTER TABLE veiculo
+MODIFY placa VARCHAR(8);
 
+ALTER TABLE cliente
+ADD COLUMN email VARCHAR(150);
