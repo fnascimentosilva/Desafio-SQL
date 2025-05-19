@@ -48,3 +48,5 @@ MODIFY placa VARCHAR(8);
 
 ALTER TABLE cliente
 ADD COLUMN email VARCHAR(150);
+
+insert into cliente (nomeCliente, email) values ('Eduarda Ferreira', 'eduarda@email.com');
