@@ -31,3 +31,14 @@ CREATE TABLE cliente_veiculo (
   FOREIGN KEY (fkCliente) REFERENCES cliente(idCliente),
   FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo)
 );
+
+CREATE table veiculo_vaga (
+idVeiculo_vaga INT AUTO_INCREMENT PRIMARY KEY,
+fkVeiculo int(11),
+fkVaga int(11),
+data_hora_entrada datetime,
+data_hora_saida datetime,
+
+FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo),
+foreign key (fkVaga) references vaga(idVaga)
+);
