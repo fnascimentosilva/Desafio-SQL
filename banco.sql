@@ -42,3 +42,5 @@ data_hora_saida datetime,
 FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo),
 foreign key (fkVaga) references vaga(idVaga)
 );
+
+
