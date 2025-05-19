@@ -50,3 +50,5 @@ ALTER TABLE cliente
 ADD COLUMN email VARCHAR(150);
 
 insert into cliente (nomeCliente, email) values ('Eduarda Ferreira', 'eduarda@email.com');
+
+insert into veiculo (placa, tipo) values ('EFX9D55', 'moto');
